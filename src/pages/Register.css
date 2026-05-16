@@ -1,0 +1,154 @@
+/* PAGE BACKGROUND */
+.register-page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      rgba(7, 17, 31, 0.85),
+      rgba(7, 17, 31, 0.92)
+    ),
+    url("../assets/images/login-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* OPTIONAL GRID OVERLAY */
+.register-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+
+  background-size: 60px 60px;
+
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* CONTAINER */
+.register-container {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+}
+
+/* CARD */
+.register-card {
+  width: 100%;
+  max-width: 500px;
+
+  padding: 45px 40px;
+
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 24px;
+
+  color: white;
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* TITLE */
+.register-title {
+  font-size: 34px;
+  font-weight: 800;
+
+  margin-bottom: 10px;
+}
+
+.register-title span {
+  color: #2ab87a;
+  font-style: italic;
+}
+
+/* TEXT */
+.register-text {
+  color: #aab4c5;
+  font-size: 14px;
+  line-height: 1.6;
+
+  margin-bottom: 25px;
+}
+
+/* LABEL */
+.register-label {
+  color: #d7dce5;
+  font-size: 14px;
+}
+
+/* INPUT */
+.register-input {
+  height: 55px !important;
+
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+
+  color: white !important;
+
+  border-radius: 14px !important;
+
+  padding-left: 16px !important;
+
+  transition: 0.2s ease;
+}
+
+.register-input::placeholder {
+  color: #8b94a7 !important;
+}
+
+.register-input:focus {
+  border-color: #2ab87a !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  box-shadow: none !important;
+}
+
+/* BUTTON */
+.register-btn {
+  height: 56px;
+
+  background: #2ab87a !important;
+  border: none !important;
+
+  border-radius: 14px !important;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+  background: #24a96f !important;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .register-card {
+    padding: 35px 25px;
+  }
+
+  .register-title {
+    font-size: 28px;
+  }
+}
