@@ -7,6 +7,8 @@ import NavigationBar from "./components/NavigationBar";
 import Footer from "./components/Footer";
 import PostJob from "./pages/PostJobs";
 import Jobs from "./pages/Dashboard";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
         <Route path="/login" element={<Login />} />
 
         <Route path="/register" element={<Register />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
 

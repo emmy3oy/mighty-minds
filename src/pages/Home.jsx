@@ -9,6 +9,7 @@ import {
 import '../App.css';
 import JobCards from "../components/JobCard";
 import SuccessStories from "../components/SucessStories";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -52,8 +53,12 @@ const HomePage = () => {
 
               {/* Buttons */}
               <div className="hero-buttons mt-4">
-                <Button className="find-btn">
-                  Find your next role
+                <Button
+                  as={Link}
+                  to="/jobs"
+                  variant="primary"
+                >
+                  Find Your Next Job
                 </Button>
 
                 <Button
